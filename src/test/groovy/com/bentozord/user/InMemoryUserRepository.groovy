@@ -19,4 +19,8 @@ class InMemoryUserRepository implements UserRepository {
     void deleteById(UUID userId) {
         users.remove(userId)
     }
+
+    def deleteAll() {
+        users = [:]
+    }
 }

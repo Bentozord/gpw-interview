@@ -39,4 +39,6 @@ public class UserFacade {
     public void delete(UUID userId) {
         userRepository.deleteById(userId);
     }
+
+    //List<UserDto> getAll()
 }

@@ -59,5 +59,9 @@ class UserSpec extends Specification {
 
     }
 
+    def cleanup() { //remember about the state of you db
+        repository.deleteAll()
+    }
+
     //cover the business functionalities/requirements
 }

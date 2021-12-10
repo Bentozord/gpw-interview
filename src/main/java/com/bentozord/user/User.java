@@ -10,11 +10,11 @@ import java.util.UUID;
 class User {
 
     @Id
-    UUID id;
-    String firstName;
-    String lastName;
-    String email;
-    LocalDate birthDate;
+    private UUID id;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private LocalDate birthDate;
 
     UserDto dto() {
         return new UserDto(firstName, lastName, email, birthDate); // we should use builder here
